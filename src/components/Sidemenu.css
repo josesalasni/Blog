@@ -1,0 +1,58 @@
+.card {
+    background: #FFFFFF;
+    width: 90%;
+    height: auto;
+    padding-bottom: 30px;
+    overflow: hidden;
+    border: 2px solid #ebedf0;
+    text-align: center;
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    
+    box-shadow: '0 2px 8px #f0f1f2';
+    -webkit-box-shadow: '0 2px 8px #f0f1f2';
+}
+  
+  
+.card-banner {
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 100px;
+    padding-top: 35px;
+    background-color: #fafafa;
+    background-position: top;
+    background-size: cover;
+}
+  
+.card-profile {
+    background: url('https://avatars3.githubusercontent.com/u/27827620?s=460&v=4');
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto auto;
+    background-size: cover;
+    background-color: #f1f1f1;
+    border: 3px solid #fff;
+    margin-top: 15px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.5);
+
+}
+
+.card-profile:hover {
+    border: 6px solid #fff;
+}
+  
+.card-links {
+    margin-top: 40px;
+}
+
+.card-links a {
+    color: #9e9e9e;
+}
+
+.card-content {
+    margin-top: 20px;
+}
+
