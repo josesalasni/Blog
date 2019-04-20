@@ -7,7 +7,7 @@ import { Link, graphql } from "gatsby"
 class tagsInfo extends React.Component {
 
     render() {
-        const { data } = this.props
+      const { data } = this.props
       const siteTitle = data.site.siteMetadata.title
       const posts = this.props.data.allMarkdownRemark.edges
       const title = this.props.data.site.siteMetadata.title
@@ -22,7 +22,7 @@ class tagsInfo extends React.Component {
       return (
         <MainLayout location={this.props.location} title={siteTitle}>
         
-          <h2>
+          <h2 style={{marginTop: '0'}}>
             Hay {this.props.data.allMarkdownRemark.totalCount} posts etiquetados con“
             {this.props.pageContext.tag}”
           </h2>

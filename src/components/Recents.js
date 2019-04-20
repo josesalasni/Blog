@@ -19,7 +19,7 @@ class Recents extends React.Component {
                     })} 
                     
                     return (
-                        <div style={{marginTop: '40px'}}>
+                        <div style={{marginTop: '24px', display: 'inline-block', width: '90%'}}>
                             <h4>Artículos recientes</h4>
                             <Divider style={{border: '2px solid #ebedf0'}}/>
                             <List

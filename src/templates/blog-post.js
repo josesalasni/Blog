@@ -6,7 +6,7 @@ import Bio from '../components/Bio'
 import MainLayout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
-import ReactDisqusComments from 'react-disqus-comments'
+
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <MainLayout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <h1>{post.frontmatter.title}</h1>
+        <h1 style={{marginTop: '0'}}>{post.frontmatter.title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
@@ -76,16 +76,6 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
-
-        <div>
-        <ReactDisqusComments
-            shortname="your_short_name"
-            identifier={post.id}
-            title={post.title}
-            url={post.url}
-            category_id={post.category_id}
-        />
-        </div>
 
       </MainLayout>
     )
