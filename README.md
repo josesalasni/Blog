@@ -1,11 +1,13 @@
-# gatsby-paginated-blog
+# My Blog
 
-Gatsby starter for creating a blog with pagination
+Repository of my blog files, that are deployed in my github pages.
 
-Install this starter by running from your CLI:
+# How to build
 
-`npx gatsby new my-paginated-blog https://github.com/NickyMeuleman/gatsby-paginated-blog`
+- npx gatsby develop - For development 
+- npx gatsby build - For build
 
-## Running in development
+# How to deploy to github pages
 
-`npm run develop`
+- In the path Scripts/deploy-github, change the url of the repo
+- execute Npm run-script deploy:page 
