@@ -11,17 +11,6 @@ import { async } from 'q';
 
 class BlogPostTemplate extends React.Component {
 
-    componentDidMount(){
-
-        const script = document.createElement("script");
-
-        script.src = "https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2&appId=312715572758197&autoLogAppEvents=1";
-        script.async = true;
-        script.crossOrigin="anonymous";
-
-        document.body.appendChild(script);
-    }
-
     render() {
         const post = this.props.data.markdownRemark
         const siteTitle = this.props.data.site.siteMetadata.title
@@ -90,7 +79,7 @@ class BlogPostTemplate extends React.Component {
             </li>
             </ul>
 
-            <div class="fb-comments" data-href={window.location.href} data-numposts="6"></div>
+        
         </MainLayout>
         )
     }
