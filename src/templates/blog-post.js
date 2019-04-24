@@ -6,7 +6,7 @@ import Bio from '../components/Bio'
 import MainLayout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
-import { async } from 'q';
+import Disqus from 'gatsby-plugin-disqus'
 
 
 class BlogPostTemplate extends React.Component {
@@ -79,7 +79,12 @@ class BlogPostTemplate extends React.Component {
             </li>
             </ul>
 
-        
+            <Disqus 
+                identifier={post.id}
+                title={post.title}    
+            />
+             
+           
         </MainLayout>
         )
     }
